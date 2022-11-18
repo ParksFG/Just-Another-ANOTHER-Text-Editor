@@ -26,6 +26,22 @@ module.exports = () => {
         swSrc: './src-sw.js',
         swDest: 'src-sw.js'
       }),
+      new WebpackPwaManifest({
+        name: 'Just Another ANOTHER Text Editor',
+        short_name: 'JAATE',
+        description: `The third text editor you'll ever need!`,
+        background_color: '272822',
+        theme_color: '#31a9e1',
+        start_url: './',
+        publicPath: './',
+        icons: [
+          {
+            src: path.resolve('assets/images/logo.png'),
+            sizes: [96, 128, 192, 256, 384, 512],
+            destination: path.join('assets', 'icons'),
+          },
+        ],
+      }),
     ],
 
     module: {
