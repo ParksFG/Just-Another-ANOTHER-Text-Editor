@@ -27,7 +27,7 @@ module.exports = () => {
         name: 'Just Another ANOTHER Text Editor',
         short_name: 'JAATE',
         description: `The third text editor you'll ever need!`,
-        background_color: '272822',
+        background_color: '#272822',
         theme_color: '#31a9e1',
         start_url: './',
         publicPath: './',
